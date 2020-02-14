@@ -1,0 +1,157 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e4e4e4;
+    width: 100vw;
+    height: 100vh;
+}
+.wrap {
+    width: 80%;
+    height: 80%;
+    background: #363A3C;
+    color: #fff;
+    border-radius: 10px;
+}
+::placeholder {
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+}
+form {
+    position: relative;
+    width: 100%;
+    height: 30%;
+    box-sizing: border-box;
+    padding: 2%;
+    border-bottom: 1px solid #e4e4e4;
+}
+form > .get_font {box-sizing: border-box; margin-top: 1%; width: 49%;}
+form > label {display: inline-block; height: 25%;}
+form > label.font_change {width: 33%;}
+form > label > input {background: #363A3C; padding: 0; height: 20px; border: 1px solid #fff; color: #fff; font-size: 15px; font-weight: 400;}
+form > label > .link_copy {width: 85%;}
+form > label > .css_copy {width: 85%;}
+textarea {
+    width: 100%;
+    height: 70%;
+    padding: 10px;
+    border: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    resize: none;
+    background: #363a3c;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+}
+input:focus::placeholder, textarea:focus::placeholder {color: transparent;}
+.getLink {height: 25%;}
+.getLink > a {display: inline-block; line-height: 30px; text-align: center;}
+.getLink .googleLink {border: 2px outset silver; margin-right: 2%; padding:0 1%; box-sizing: border-box;}
+.getLink .googleLink:hover {border: 2px inset silver;}
+.getLink .useGuid {width: 30px; height: 30px; border: 2px outset silver; border-radius: 50%; position: relative;}
+.getLink .useGuid:hover {border: 2px inset silver;}
+.getLink .useGuid .readGuid {display: none; position: absolute; top: 20px; left: 20px;}
+.getLink .useGuid.on .readGuid {
+    display: block;
+    z-index: 1;
+    width: 400px;
+    background: #363A3C;
+    color: #fff;
+    border: 2px dashed #fff;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.submitBtn {
+    display: inline-block; 
+    border: 2px dashed #fff; 
+    background: none; 
+    color: #fff; 
+    height: 15%; 
+    position: absolute; 
+    bottom:8%; 
+    right: 3%; 
+    width: 10%; 
+    font-size: 15px;
+}
+@media screen and (min-width:421px) and (max-width: 859px) {
+form > .get_font {box-sizing: border-box; margin-top: 1%; width: 90%;}
+form > label {display: inline-block; width: 100%; height: 25%;}
+form > label > input {background: #363A3C; padding: 0; height: 20px; border: 1px solid #fff; color: #fff; font-size: 15px; font-weight: 400;}
+form > label > .link_copy {width: 85%;}
+form > label > .css_copy {width: 85%;}
+form > label {display: inline-block; height: 10%; margin: 5px;}
+form > label.font_change {width: 100%;}
+.getLink {height: 15%; margin: 2% 0;}
+.getLink > a {display: inline-block; line-height: 30px; text-align: center;}
+.getLink .googleLink {margin-right: 2%; padding:0 1%; box-sizing: border-box;}
+.getLink .googleLink:hover {border: 2px inset silver;}
+.getLink .useGuid {width: 30px; height: 30px; border: 2px outset silver; border-radius: 50%; position: relative;}
+.getLink .useGuid:hover {border: 2px inset silver;}
+.getLink .useGuid .readGuid {display: none; position: absolute; top: 20px; left: 20px;}
+.getLink .useGuid.on .readGuid {
+    display: block;
+    z-index: 1;
+    width: 400px;
+    background: #363A3C;
+    color: #fff;
+    border: 2px dashed #fff;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.submitBtn {
+    display: inline-block; 
+    border: 2px dashed #fff; 
+    background: none; 
+    color: #fff; 
+    height: 15%; 
+    position: absolute; 
+    bottom:8%; 
+    right: 3%; 
+    width: 10%; 
+    font-size: 15px;
+}
+}
+
+@media screen and (max-width: 420px){
+form {height: 40%;}
+form > .get_font {box-sizing: border-box; margin-top: 1%; width: 90%;}
+form > label {display: inline-block; width: 100%; height: 20%; font-size: 12px;}
+form > label > input {background: #363A3C; padding: 0; height: 100%; border: 1px solid #fff; color: #fff; font-size: 15px; font-weight: 400;}
+form > label > .link_copy {width: 85%;}
+form > label > .css_copy {width: 85%;}
+form > label {display: inline-block; height: 10%; margin: 5px;}
+form > label.font_change {width: 100%;}
+.getLink {height: 10%; margin: 2% 0;}
+.getLink > a {display: inline-block; line-height: 100%; text-align: center;}
+.getLink .googleLink {margin-right: 2%; padding:0 1%; box-sizing: border-box;}
+.getLink .googleLink:hover {border: 2px inset silver;}
+.getLink .useGuid {width: 15px; height: 80%; border: 2px outset silver; border-radius: 50%; position: relative;}
+.getLink .useGuid:hover {border: 2px inset silver;}
+.getLink .useGuid .readGuid {display: none; position: absolute; top: 10px; left: 10px;}
+.getLink .useGuid.on .readGuid {
+    display: block;
+    z-index: 1;
+    width: 200px;
+    background: #363A3C;
+    color: #fff;
+    border: 2px dashed #fff;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.submitBtn {
+    display: inline-block; 
+    border: 2px dashed #fff; 
+    background: none; 
+    color: #fff; 
+    height: 10%; 
+    position: absolute; 
+    bottom:2%; 
+    right: 3%; 
+    width: 15%; 
+    font-size: 12px;
+} 
+}
+

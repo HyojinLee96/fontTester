@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fontTester</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="js/ui.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <form>
+        <label class="font_change" id="FontSize">FontSize: <input type="text" placeholder="15" class="font_size font"/> px</label>
+        <label class="font_change" id="FontWeight">FontWeight: <input type="text" placeholder="400" class="font_weight"/></label>
+        <label class="font_change" id="LineHeight">LineHeight: <input type="text" placeholder="normal" class="line_height"/></label>
+        <div class="getLink">
+            <a href="https://fonts.google.com/" class="googleLink" target="_blank">GetFont</a>
+            <a href="" class="useGuid">
+                ?
+                <div class="readGuid">
+                    원하는 FontSize와 FontWeight, LineHeight를 입력 후,
+                    GetFont를 눌러 GoogleFont에 이동하여 원하는 폰트의 Link는 아래의 Link에, Css는 아래의 Css에 보기와 같이 입력하여 넣고 원하는 셋팅이 끝나면 SET버튼을 누르고 텍스트를 입력하여 테스트 할 수 있다.
+                </div>
+            </a>
+        </div>
+        <label class="get_font" id="Link">Link: <input type="text" class="link_copy" placeholder='&lt;link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"&LT;'/></label>
+        <label class="get_font" id="Css">CSS: <input type="text" class="css_copy" placeholder="font-family: 'Roboto', sans-serif;"/></label>
+        <button type="submit" class="submitBtn">SET</button>
+    </form>
+    <textarea placeholder="이 곳에 텍스트를 입력하세요."></textarea>
+</div>
+</body>
+</html>
